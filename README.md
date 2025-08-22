@@ -13,8 +13,8 @@ A dark, creamy theme ported from [Vencord's Midnight](https://github.com/refact0
 
 ---
 
-### 🎨 Icon Pack
-Iconpack by [mudrhiod](https://github.com/mudrhiod) forked from [Rairof Iconpack](https://github.com/Rairof/discord-iconpacks):
+### 🎨 Oneko Icon
+Oneko Icon by [mudrhiod](https://github.com/mudrhiod) forked from [Rairof Iconpack](https://github.com/Rairof/discord-iconpacks):
 - **Copy link**: https://raw.githubusercontent.com/kmmiio99o/oneko/main/Packs/Plumpy/
 
 ---
