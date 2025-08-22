@@ -27,16 +27,16 @@ Iconpack by [mudrhiod](https://github.com/mudrhiod) forked from [Rairof Iconpack
 
 
 **Server List View**
-<img src="preview/preview1.png" width="500" />
+<img src="https://files.catbox.moe/vxwlos.jpg" width="500" />
 
 **Message Thread**
-<img src="preview/preview2.png" width="500" />
+<img src="https://files.catbox.moe/v7dw1z.jpg" width="500" />
 
 **Settings Menu**
-<img src="preview/preview3.png" width="500" />
+<img src="https://files.catbox.moe/8hl5vf.jpg" width="500" />
 
 **Member List**
-<img src="preview/preview4.png" width="500" />
+<img src="https://files.catbox.moe/d2i4bj.jpg" width="500" />
 
 </details>
 
