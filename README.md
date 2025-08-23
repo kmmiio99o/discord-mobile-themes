@@ -10,8 +10,6 @@ Theme based on [Vencord's Midnight](https://github.com/refact0r/midnight-discord
 ### 🔗 Links
 - **Raw Theme Link**: https://raw.githubusercontent.com/kmmiio99o/discord-mobile-themes/main/midnight-vencord.json
 
-- **Website Theme Link**: https://kmmiio99o.github.io/discord-mobile-themes/midnight-vencord.json
-
 ---
 
 ### 🎨 Oneko Icon
@@ -28,16 +26,16 @@ Oneko Icon forked from [Rairof Iconpack](https://github.com/Rairof/discord-iconp
 
 
 **Server List View**
-<br><img src="https://files.catbox.moe/vxwlos.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview1.jpg" width="300" /></br>
 
 **Message Thread**
-<br><img src="https://files.catbox.moe/v7dw1z.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview2.jpg" width="300" /></br>
 
 **Settings Menu**
-<br><img src="https://files.catbox.moe/8hl5vf.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview3.jpg" width="300" /></br>
 
 **Member List**
-<br><img src="https://files.catbox.moe/d2i4bj.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview4.jpg" width="300" /></br>
 
 </details>
 
@@ -67,14 +65,13 @@ For issues and suggestions:
 
 <details>
 <summary><h3>Tenka Izumo</h3></summary>
-Discord Mobile Theme based on Tenka Izumo character from "mato seihei no slave" anime. Idea by doomslayer_38.
+
+Discord Mobile Theme based on Tenka Izumo character from "mato seihei no slave" anime. Idea by [doomslayer_38](https://discord.com/users/1063186604660895774).
 
 ---
 
 ### 🔗 Links
 - **Raw Theme Link**: https://raw.githubusercontent.com/kmmiio99o/discord-mobile-themes/main/tenka-izumo.json
-
-- **Website Theme Link**: https://kmmiio99o.github.io/discord-mobile-themes/tenka-izumo.json
 
 ---
 
@@ -86,16 +83,16 @@ Discord Mobile Theme based on Tenka Izumo character from "mato seihei no slave" 
 
 
 **Server List View**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/preview1.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview1.jpg" width="300" /></br>
 
 **Message Thread**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/preview2.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview2.jpg" width="300" /></br>
 
 **Settings Menu**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/preview3.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview3.jpg" width="300" /></br>
 
 **Member List**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/preview4.jpg" width="300" /></br>
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview4.jpg" width="300" /></br>
 
 </details>
 
