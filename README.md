@@ -2,7 +2,8 @@
 
 <details>
 <summary><h3>Midnight Vencord</h3></summary>
-A dark, creamy theme ported from [Vencord's Midnight](https://github.com/refact0r/midnight-discord/blob/master/themes/flavors/midnight-vencord.theme.css) theme with custom icon pack support.
+
+Theme based on [Vencord's Midnight](https://github.com/refact0r/midnight-discord/blob/master/themes/flavors/midnight-vencord.theme.css) by [refact0r](https://github.com/refact0r).
 
 ---
 
@@ -61,7 +62,9 @@ For issues and suggestions:
 - **Icon Design**: mudrhiod (based on Rairof's work)
 - **Original Concept**: [refact0r's Midnight Theme](https://github.com/refact0r/midnight-discord)
 - **Color Inspiration**: Vencord
+
 </details>
+
 <details>
 <summary><h3>Tenka Izumo</h3></summary>
 Discord Mobile Theme based on Tenka Izumo character from "mato seihei no slave" anime. Idea by doomslayer_38.
