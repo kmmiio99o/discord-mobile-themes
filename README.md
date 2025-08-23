@@ -15,7 +15,7 @@ Theme based on [Vencord's Midnight](https://github.com/refact0r/midnight-discord
 ---
 
 ### 🎨 Oneko Icon
-Oneko Icon by [mudrhiod](https://github.com/mudrhiod) forked from [Rairof Iconpack](https://github.com/Rairof/discord-iconpacks):
+Oneko Icon forked from [Rairof Iconpack](https://github.com/Rairof/discord-iconpacks):
 - **Copy link**: https://raw.githubusercontent.com/kmmiio99o/oneko/main/Packs/Plumpy/
 
 ---
