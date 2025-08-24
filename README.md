@@ -117,3 +117,93 @@ For issues and suggestions:
 - **Color Inspiration**: Tenka Izumo - Mato Seiher no Slave
 - **Inspiration**: Doom's love for this character
 </details>
+<details>
+<summary><h3>Dark Blossom</h3></summary>
+A beautiful dark pink theme, made for people who love pink but prefer a darker interface.
+
+---
+
+### 🔗 Links
+- **Raw Theme Link**: https://raw.githubusercontent.com/kmmiio99o/discord-mobile-themes/main/tenka-izumo.json
+
+- **Website Theme Link**: https://kmmiio99o.github.io/discord-mobile-themes/tenka-izumo.json
+
+---
+
+<details>
+<summary><b>📱 Preview Images</b></summary>
+<br>
+
+**Server List View**
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview3.jpg" width="300" /></br>
+
+**Message Thread**
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview4.jpg" width="300" /></br>
+
+</details>
+
+---
+
+### Supported Clients
+- ### Revenge
+- ### Kettu
+
+---
+
+
+
+### Support
+For issues and suggestions:
+[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp)
+
+---
+
+### Credits
+- **Theme Author**: [kmmiio99o.dev](https://discord.com/users/879393496627306587)
+- **Color Inspiration**: Blossom colors
+</details>
+<details>
+<summary><h3>Light Blossom</h3></summary>
+A beautiful light pink theme, made for people who love pink but prefer a brighter interface.
+
+---
+
+### 🔗 Links
+- **Raw Theme Link**: https://raw.githubusercontent.com/kmmiio99o/discord-mobile-themes/main/tenka-izumo.json
+
+- **Website Theme Link**: https://kmmiio99o.github.io/discord-mobile-themes/tenka-izumo.json
+
+---
+
+<details>
+<summary><b>📱 Preview Images</b></summary>
+<br>
+
+**Server List View**
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview1.jpg" width="300" /></br>
+
+**Message Thread**
+<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview2.jpg" width="300" /></br>
+
+</details>
+
+---
+
+### Supported Clients
+- ### Revenge
+- ### Kettu
+
+---
+
+
+
+### Support
+For issues and suggestions:
+[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp)
+
+---
+
+### Credits
+- **Theme Author**: [kmmiio99o.dev](https://discord.com/users/879393496627306587)
+- **Color Inspiration**: Blossom colors
+</details>
