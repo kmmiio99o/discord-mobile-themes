@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Themes File Monitor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        :root {
+            --bg: #1a202c;
+            --card-bg: #2d3748;
+            --text: #e2e8f0;
+            --subtle: #a0aec0;
+            --accent: #6690ff;
+            --hover: #4a5568;
+            --border: #4a5568;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .light-mode {
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --subtle: #718096;
+            --accent: #4c7ef3;
+            --hover: #e2e8f0;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        h1 i {
+            font-size: 1.3em;
+        }
+
+        .subtitle {
+            color: var(--subtle);
+            font-size: 0.9rem;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .refresh-info {
+            font-size: 0.9rem;
+            color: var(--subtle);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .dark-toggle {
+            background: #4c7ef3;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 80px;
+            transition: background 0.2s;
+        }
+
+        .dark-toggle:hover {
+            background: #3a6ed4;
+        }
+
+        #file-list {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            padding: 8px 0;
+        }
+
+        .file-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 16px;
+            margin: 10px 12px;
+            background: var(--bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .file-item.new {
+            border-color: #22c55e;
+            animation: highlight 2s ease-in-out;
+        }
+
+        @keyframes highlight {
+            0% {
+                background: rgba(34, 197, 94, 0.2);
+            }
+
+            100% {
+                background: var(--bg);
+            }
+        }
+
+        .file-info {
+            width: 100%;
+        }
+
+        .file-name {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 1.1rem;
+            word-break: break-word;
+        }
+
+        .file-desc {
+            font-size: 0.95rem;
+            color: var(--subtle);
+            font-style: italic;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        .file-meta {
+            font-size: 0.85rem;
+            color: var(--subtle);
+            margin-top: 4px;
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent);
+            background: rgba(76, 126, 243, 0.1);
+            border: 1px solid rgba(76, 126, 243, 0.3);
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            min-width: 80px;
+            text-align: center;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .action-btn:hover {
+            background: rgba(76, 126, 243, 0.2);
+            border-color: var(--accent);
+        }
+
+        .action-btn.copied {
+            background: rgba(34, 197, 94, 0.2) !important;
+            border-color: #22c55e !important;
+            color: #22c55e !important;
+        }
+
+        @media (min-width: 768px) {
+            .file-item {
+                flex-direction: row;
+                align-items: center;
+                gap: 16px;
+            }
+
+            .file-info {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .file-actions {
+                flex-shrink: 0;
+                width: auto;
+            }
+        }
+
+        .loading,
+        .empty,
+        .error {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--subtle);
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .error {
+            color: #fc8181;
+        }
+
+        .timestamp {
+            text-align: center;
+            color: var(--subtle);
+            font-size: 0.85rem;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body class="dark-mode">
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-sync-alt fa-spin"></i> Themes Monitor</h1>
+            <p class="subtitle">Tracking .json themes in real-time (all folders)</p>
+        </header>
+
+        <div class="controls">
+            <div class="refresh-info">
+                <i class="fas fa-clock"></i>
+                Updates every 3 hours
+            </div>
+            <button class="dark-toggle" id="darkModeToggle">
+                <i class="fas fa-sun"></i> Light Mode
+            </button>
+        </div>
+
+        <div id="file-list">
+            <p class="loading">Loading cached data...</p>
+        </div>
+
+        <p class="timestamp" id="update-time">—</p>
+    </div>
+
+    <script>
+        // === CONFIGURATION ===
+        const GITHUB_USER = "kmmiio99o";
+        const GITHUB_REPO = "discord-mobile-themes";
+        const BRANCH = "main";
+        const UPDATE_INTERVAL = 3 * 60 * 60 * 1000; // 3 hours
+
+        // GitHub API: Get Git tree (lists all files recursively)
+        const TREE_API_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/git/trees/${BRANCH}?recursive=1`;
+
+        const CACHE_KEY = "themes_cache_v4";
+        const MODE_KEY = "user_theme_mode_v1";
+
+        const fileListEl = document.getElementById("file-list");
+        const timeEl = document.getElementById("update-time");
+        const darkModeToggle = document.getElementById("darkModeToggle");
+
+        // === THEME TOGGLE LOGIC ===
+        function setTheme(isLight) {
+            if (isLight) {
+                document.body.classList.remove("dark-mode");
+                document.body.classList.add("light-mode");
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            } else {
+                document.body.classList.remove("light-mode");
+                document.body.classList.add("dark-mode");
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            }
+            localStorage.setItem(MODE_KEY, isLight ? "light" : "dark");
+        }
+
+        const savedMode = localStorage.getItem(MODE_KEY);
+        if (savedMode === "light") {
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
+
+        darkModeToggle.addEventListener("click", () => {
+            const isLight = document.body.classList.contains("light-mode");
+            setTheme(!isLight);
+        });
+
+        // === GET DESCRIPTION FROM JSON ===
+        async function getDescription(downloadUrl) {
+            try {
+                const response = await fetch(downloadUrl);
+                if (!response.ok) return "Description unavailable";
+
+                const rawData = await response.text();
+                const cleanData = rawData.trim().replace(/^\uFEFF/, "");
+
+                let json = JSON.parse(cleanData);
+                return typeof json.description === "string"
+                    ? json.description.trim() || "No description."
+                    : "No description field.";
+            } catch (err) {
+                return "Load failed.";
+            }
+        }
+
+        // === COPY TO CLIPBOARD WITH FEEDBACK ===
+        function copyToClipboard(text, button) {
+            if (!navigator.clipboard) {
+                const input = document.createElement("input");
+                input.value = text;
+                document.body.appendChild(input);
+                input.select();
+                try {
+                    document.execCommand("copy");
+                    showMessage(button, "✓ Copied!", "#22c55e");
+                } catch (err) {
+                    showMessage(button, "Failed!", "#ef4444");
+                }
+                document.body.removeChild(input);
+                return;
+            }
+
+            navigator.clipboard.writeText(text).then(
+                () => showMessage(button, "✓ Copied!", "#22c55e"),
+                () => showMessage(button, "Failed!", "#ef4444")
+            );
+        }
+
+        function showMessage(button, message, color) {
+            const originalHTML = button.innerHTML;
+            button.innerHTML = `<i class="fas fa-check"></i> <span class="btn-text">${message}</span>`;
+            button.style.setProperty("border-color", color, "important");
+            button.style.setProperty("color", color, "important");
+
+            setTimeout(() => {
+                button.innerHTML = originalHTML;
+                button.style.removeProperty("border-color");
+                button.style.removeProperty("color");
+            }, 2000);
+        }
+
+        // === CACHE HANDLING ===
+        function getCachedData() {
+            const cached = localStorage.getItem(CACHE_KEY);
+            const lastCheck = localStorage.getItem("themes_last_check_v4");
+            return cached ? { data: JSON.parse(cached), lastCheck: +lastCheck } : null;
+        }
+
+        function setCacheData(data) {
+            localStorage.setItem(CACHE_KEY, JSON.stringify(data));
+            localStorage.setItem("themes_last_check_v4", Date.now());
+        }
+
+        function displayFiles(files, isCache = false) {
+            if (files.length === 0) {
+                fileListEl.innerHTML = `<p class="empty">No .json themes found in any folder.</p>`;
+                return;
+            }
+
+            fileListEl.innerHTML = "";
+            const fragment = document.createDocumentFragment();
+
+            files.forEach((file) => {
+                const fileEl = document.createElement("div");
+                fileEl.className = `file-item ${file.isNew ? "new" : ""}`;
+                fileEl.innerHTML = `
+            <div class="file-info">
+              <div class="file-name">${file.name}</div>
+              <div class="file-desc">${file.description}</div>
+              <div class="file-meta">${(file.size / 1024).toFixed(2)} KB • ${file.path}</div>
+            </div>
+            <div class="file-actions">
+              <button class="action-btn copy-btn" title="Copy raw JSON URL">
+                <i class="fas fa-link"></i>
+                <span class="btn-text">Copy Link</span>
+              </button>
+              <button class="action-btn github-btn" title="View on GitHub">
+                <i class="fab fa-github"></i>
+                <span class="btn-text">GitHub</span>
+              </button>
+            </div>
+          `;
+                fragment.appendChild(fileEl);
+
+                const copyBtn = fileEl.querySelector(".copy-btn");
+                copyBtn.addEventListener("click", () => {
+                    copyToClipboard(file.download_url, copyBtn);
+                });
+
+                const githubBtn = fileEl.querySelector(".github-btn");
+                githubBtn.addEventListener("click", () => {
+                    window.open(file.html_url, "_blank", "noopener");
+                });
+            });
+
+            fileListEl.appendChild(fragment);
+            timeEl.textContent = `Loaded ${isCache ? "from cache" : "fresh"}: ${new Date().toLocaleString()}`;
+        }
+
+        // === FETCH ALL JSON FILES RECURSIVELY ===
+        async function fetchAllJsonFiles() {
+            try {
+                const response = await fetch(TREE_API_URL);
+                if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
+
+                const treeData = await response.json();
+                if (!treeData.tree) throw new Error("Invalid tree response");
+
+                // Filter only .json files
+                const jsonFiles = treeData.tree
+                    .filter(item => item.type === "blob" && item.path.toLowerCase().endsWith(".json"))
+                    .map(item => {
+                        const download_url = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/${item.path}`;
+                        const html_url = `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/blob/${BRANCH}/${item.path}`;
+                        const parts = item.path.split("/");
+                        const name = parts[parts.length - 1];
+
+                        return {
+                            name,
+                            path: item.path,  // Show folder path
+                            download_url,
+                            html_url,
+                            size: item.size
+                        };
+                    });
+
+                // Get descriptions
+                const filesWithDesc = [];
+                for (const file of jsonFiles) {
+                    const description = await getDescription(file.download_url);
+                    filesWithDesc.push({ ...file, description });
+                }
+
+                setCacheData(filesWithDesc);
+                return filesWithDesc;
+            } catch (err) {
+                console.error("Failed to fetch recursive JSON files:", err);
+                return null;
+            }
+        }
+
+        // === UPDATE LOGIC ===
+        async function updateFiles() {
+            const cached = getCachedData();
+            const now = Date.now();
+
+            if (cached && now - cached.lastCheck < UPDATE_INTERVAL) {
+                displayFiles(cached.data, true);
+            } else {
+                fileListEl.innerHTML = '<p class="loading">Scanning all folders for .json files...</p>';
+                const freshData = await fetchAllJsonFiles();
+
+                if (freshData) {
+                    if (cached) {
+                        const cachedNames = new Set(cached.data.map(f => f.download_url));
+                        freshData.forEach(f => {
+                            f.isNew = !cachedNames.has(f.download_url);
+                        });
+                    }
+                    displayFiles(freshData, false);
+                } else if (cached) {
+                    displayFiles(cached.data, true);
+                    timeEl.textContent = "⚠️ Using cached data (API unreachable)";
+                } else {
+                    fileListEl.innerHTML = `<p class="error">No .json files found.</p>`;
+                    timeEl.textContent = "Never updated";
+                }
+            }
+        }
+
+        // === INITIAL LOAD ===
+        (async () => {
+            const cached = getCachedData();
+            if (cached) {
+                displayFiles(cached.data, true);
+            }
+            await updateFiles();
+        })();
+
+        // === AUTO-REFRESH ===
+        setInterval(updateFiles, UPDATE_INTERVAL);
+    </script>
+</body>
+
+</html>
