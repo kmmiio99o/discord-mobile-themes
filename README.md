@@ -51,7 +51,7 @@ Oneko Icon forked from [Rairof Iconpack](https://github.com/Rairof/discord-iconp
 
 ### Support
 For issues and suggestions:
-[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp)
+[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp) or [Revenge](https://discord.gg/WCAwVaPFf4)
 
 ---
 
@@ -108,7 +108,7 @@ Discord Mobile Theme based on Tenka Izumo character from "mato seihei no slave" 
 
 ### Support
 For issues and suggestions:
-[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp)
+[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp) or [Revenge](https://discord.gg/WCAwVaPFf4)
 
 ---
 
@@ -154,7 +154,7 @@ A beautiful dark pink theme, made for people who love pink but prefer a darker i
 
 ### Support
 For issues and suggestions:
-[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp)
+[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp) or [Revenge](https://discord.gg/WCAwVaPFf4)
 
 ---
 
@@ -199,7 +199,7 @@ A beautiful light pink theme, made for people who love pink but prefer a brighte
 
 ### Support
 For issues and suggestions:
-[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp)
+[Kettu/rain Discord Server](https://discord.com/invite/6cN7wKa8gp) or [Revenge](https://discord.gg/WCAwVaPFf4)
 
 ---
 
