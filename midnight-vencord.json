@@ -76,6 +76,7 @@
     "TEXT_SECONDARY": ["#b3a58c"],
     "BG_MOD_FAINT": ["hsla(20, 3%, 40%, 0.1)"],
     "KEYBOARD": ["#3c3836"],
+    "AUTOCOMPLETE_BG": ["#282828"],
     "BACKGROUND_MODIFIER_ACCEPT": ["#a8b66533"],
     "BACKGROUND_MODIFIER_ACCEPT_HOVER": ["#a8b6654d"],
     "AUTOMOD_QUEUED_FOR_REVIEW_BACKGROUND": ["#d8a65633"],
@@ -217,18 +218,18 @@
     "WHITE_630": "#a79a83"
   },
   "plus": {
-        "version": "0",
-        "iconPack": "rosiecord-plumpy",
-        "mentionLineColor": "#E692C4",
-        "customOverlays": true,
-        "icons": {
-            "trash": "#eb6f92",
-            "TrashIcon": "#eb6f92",
-            "TriangleExclamationPointIcon": "#eb6f92",
-            "toast_copy_link": "#ffccf4",
-            "toast_copy_message": "#feffff",
-            "toast_image_saved": "#feffff"
-        }
+    "version": "0",
+    "iconPack": "rosiecord-plumpy",
+    "mentionLineColor": "#E692C4",
+    "customOverlays": true,
+    "icons": {
+      "trash": "#eb6f92",
+      "TrashIcon": "#eb6f92",
+      "TriangleExclamationPointIcon": "#eb6f92",
+      "toast_copy_link": "#ffccf4",
+      "toast_copy_message": "#feffff",
+      "toast_image_saved": "#feffff"
+    }
   },
   "spec": 2
 }
