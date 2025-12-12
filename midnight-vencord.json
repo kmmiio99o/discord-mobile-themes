@@ -9,6 +9,7 @@
     }
   ],
   "semanticColors": {
+    "ANDROID_NAVIGATION_BAR_BACKGROUND": ["#ffffff"],
     "ANDROID_RIPPLE": ["#5e505c"],
     "CHAT_BACKGROUND": ["#282828"],
     "BACKGROUND_ACCENT": ["#d3869b"],
@@ -70,6 +71,7 @@
     "POLLS_NORMAL_FILL_HOVER": ["#3c3836"],
     "POLLS_NORMAL_IMAGE_BACKGROUND": ["#3c3836"],
     "POLLS_VICTOR_FILL": ["#a8b66580"],
+    "MOBILE_TEXT_HEADING_PRIMARY": ["#d4be98"],
     "TEXT_LINK": ["#d3869b"],
     "TEXT_MUTED": ["#d4be9866"],
     "TEXT_NORMAL": ["#d4be98"],
@@ -128,6 +130,7 @@
     "PLUM_19": "#3c3836",
     "PLUM_20": "#282828",
     "PLUM_22": "#3c3836",
+    "PLUM_23": "#3c3836",
     "PLUM_24": "#3c3836",
     "PLUM_25": "#282828",
     "PLUM_3": "#d3869b",
