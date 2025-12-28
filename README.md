@@ -18,32 +18,14 @@ Oneko Icon forked from [Rairof Iconpack](https://github.com/Rairof/discord-iconp
 
 ---
 
-<details>
-<summary><b>📱 Preview Images</b></summary>
-<br>
-
-**Main Interface**
-
-
-**Server List View**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview1.jpg" width="300" /></br>
-
-**Message Thread**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview2.jpg" width="300" /></br>
-
-**Settings Menu**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview3.jpg" width="300" /></br>
-
-**Member List**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/vencord-midnight/preview4.jpg" width="300" /></br>
-
-</details>
 
 ---
 
 ### Supported Clients
 - ### Revenge
 - ### Kettu
+- ### ShiggyCord
+- ### Voxi
 
 ---
 
@@ -75,32 +57,11 @@ Discord Mobile Theme based on Tenka Izumo character from "mato seihei no slave" 
 
 ---
 
-<details>
-<summary><b>📱 Preview Images</b></summary>
-<br>
-
-**Main Interface**
-
-
-**Server List View**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview1.jpg" width="300" /></br>
-
-**Message Thread**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview2.jpg" width="300" /></br>
-
-**Settings Menu**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview3.jpg" width="300" /></br>
-
-**Member List**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/tenka/preview4.jpg" width="300" /></br>
-
-</details>
-
----
-
 ### Supported Clients
 - ### Revenge
 - ### Kettu
+- ### ShiggyCord
+- ### Voxi
 
 ---
 
@@ -130,23 +91,11 @@ A beautiful dark pink theme, made for people who love pink but prefer a darker i
 
 ---
 
-<details>
-<summary><b>📱 Preview Images</b></summary>
-<br>
-
-**Server List View**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview3.jpg" width="300" /></br>
-
-**Message Thread**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview4.jpg" width="300" /></br>
-
-</details>
-
----
-
 ### Supported Clients
 - ### Revenge
 - ### Kettu
+- ### ShiggyCord
+- ### Voxi
 
 ---
 
@@ -175,23 +124,11 @@ A beautiful light pink theme, made for people who love pink but prefer a brighte
 
 ---
 
-<details>
-<summary><b>📱 Preview Images</b></summary>
-<br>
-
-**Server List View**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview1.jpg" width="300" /></br>
-
-**Message Thread**
-<br><img src="https://kmmiio99o.pages.dev/theme-previews/blossom/preview2.jpg" width="300" /></br>
-
-</details>
-
----
-
 ### Supported Clients
 - ### Revenge
 - ### Kettu
+- ### ShiggyCord
+- ### Voxi
 
 ---
 
