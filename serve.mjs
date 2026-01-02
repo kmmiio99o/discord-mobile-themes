@@ -6,7 +6,7 @@ import path from "path";
 import os from "os";
 
 const ROOT = process.cwd();
-const PORT = Number(process.env.PORT || process.argv[2] || 3000);
+const PORT = Number(process.env.PORT || process.argv[2] || 1400);
 const HOST = "0.0.0.0";
 
 function contentType(ext) {
