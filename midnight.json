@@ -1,0 +1,57 @@
+{
+  "name": "Midnight with Background",
+  "description": "midnight theme with background based on refact0r one.",
+  "authors": [
+    {
+      "name": "kmmiio99o.dev",
+      "id": "879393496627306587"
+    }
+  ],
+  "spec": 2,
+  "semanticColors": {
+    "PANEL_BG": ["#16181D"],
+    "CARD_BACKGROUND_DEFAULT": ["#16181D"],
+    "MOBILE_TEXT_HEADING_PRIMARY": ["#A6ADBB"],
+    "BACKGROUND_MENTIONED": ["#0094ba33"],
+    "MENTION_BACKGROUND": ["#0094ba"],
+    "TEXT_MENTION": ["#0094ba"],
+    "TEXT_DEFAULT": ["#f6f8ff"],
+    "INPUT_BACKGROUND": ["#16181b", "#16181b", "#16181b"]
+  },
+  "background": {
+    "url": "https://refact0r.github.io/midnight-discord/assets/iceland.jpg",
+    "alpha": 0.3
+  },
+  "rawColors": {
+    "PLUM 11": "#121212",
+    "PLUM_13": "#181818",
+    "PLUM_15": "#181818",
+    "PLUM_16": "#181818",
+    "PLUM_17": "#141414",
+    "PLUM_18": "#141414",
+    "PLUM_19": "#181818",
+    "PLUM_20": "#121212",
+    "PLUM_22": "#121212",
+    "PRIMARY_700": "#121212",
+    "PRIMARY_230": "#141414",
+    "PRIMARY_300": "#121212",
+    "YELLOW_260": "#007bff",
+    "PLUM_23": "#181818",
+    "PLUM_24": "#181818",
+    "YELLOW_300": "#007bff",
+    "ORANGE_345": "#0094ba"
+  },
+  "plus": {
+    "version": "0",
+    "iconpack": "rosiecord-plumpy",
+    "icons": {
+      "ic_new_pins": ["#ff3b3b"],
+      "StatusStreaming": ["#7e64fb"],
+      "StatusMobileOnline": ["#09bd63"],
+      "StatusIdle": ["#ffd401"],
+      "StatusDND": ["#ff611a"],
+      "StatusOffline": ["#5a646e"],
+      "StatusOnline": ["#09bd63"]
+    }
+  }
+}

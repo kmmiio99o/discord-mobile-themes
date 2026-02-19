@@ -19,7 +19,7 @@
   "homepage": "https://github.com/kmmiio99o/discord-mobile-themes#readme",
   "dependencies": {
     "chalk": "^5.6.2",
-    "express": "^5.1.0",
+    "express": "^5.2.1",
     "yargs-parser": "^22.0.0"
   }
 }

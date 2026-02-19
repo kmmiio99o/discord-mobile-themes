@@ -40,7 +40,6 @@
     "BG_BACKDROP": ["#000000b2"],
     "BG_BASE_SECONDARY": ["#282828"],
     "BG_BASE_TERTIARY": ["#3c3836"],
-    "BG_SEARCH_BAR": ["#ffffff"],
     "HOME_BACKGROUND": ["#3c3836"],
     "BORDER_FAINT": ["hsla(20, 3%, 40%, 0.1)"],
     "BORDER_STRONG": ["hsla(20, 3%, 40%, 0.2)"],
