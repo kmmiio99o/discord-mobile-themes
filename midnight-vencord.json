@@ -2,6 +2,7 @@
   "name": "Midnight Vencord",
   "description": "Based on Midnight Vencord by refact0r.",
   "version": "1",
+  "spec": 2,
   "authors": [
     {
       "name": "kmmiio99o.dev",
